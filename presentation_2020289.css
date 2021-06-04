@@ -1,0 +1,73 @@
+.devnames1 {
+	position: absolute;
+	left: 25%;
+	bottom: 8%;
+}
+
+.devnames2 {
+	position: absolute;
+	right: 25%;
+	bottom: 8%;
+}
+.devnames p {
+	font-family: "Comfortaa", cursive;
+	font-size: 18px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 20px;
+	text-align: center;
+	color: rgb(172, 172, 172);
+	padding: 10px 80px;
+	font-weight: bolder;
+}
+
+.devnames p span {
+	font-family: "Stick", sans-serif;
+	font-size: 13px;
+	font-weight: weight;
+}
+
+body {
+	margin: 0;
+}
+
+#background {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	filter: blur(2px);
+	z-index: -1;
+}
+#logo {
+	height: 250px;
+	width: 300px;
+	position: fixed;
+	left: 39%;
+	top: 2%;
+}
+.logotag p {
+	position: absolute;
+	left: 5%;
+	top: 30%;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 150px;
+	color: #010203;
+}
+.logotag p span {
+	color: #0a3ce2;
+	text-transform: uppercase;
+	font-size: 170px;
+}
+
+.description {
+	font-family: "Syne Mono", monospace;
+	font-size: 2.5rem;
+	font-weight: bold;
+	position: absolute;
+	text-align: center;
+	left: 10%;
+	font-style: italic;
+	right: 12%;
+	top: 37%;
+	color: aqua;
+}

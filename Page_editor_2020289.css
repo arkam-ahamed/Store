@@ -1,0 +1,149 @@
+body {
+	margin: 0;
+}
+
+/*card before hover effect*/
+.card {
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 20px;
+	height: 460px;
+	width: 300px;
+	margin-top: 8%;
+	margin-left: 38%;
+	padding-top: 20px;
+	text-align: center;
+	font-family: "Rajdhani", sans-serif;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+/*card after hover effect*/
+
+.card:hover {
+	transform: scale(1.1);
+	box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+/*positioning of the image
+and sizing*/
+.myphoto {
+	height: 195px;
+	width: 195px;
+	border-radius: 195px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*aligning of the tasks*/
+ul {
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*social media buttons before hover effect*/
+.socialmedia {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	transition: 0.5s;
+	margin-top: 25px;
+}
+
+/*social media buttons after hover effect*/
+.socialmedia:hover {
+	transform: scale(1.7);
+}
+
+/*removing the underlining of the links
+and setting the font color to black*/
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/*setting the position of the
+rest of my tasks buttons*/
+.my_pages {
+	position: absolute;
+	top: 20%;
+	right: 25%;
+}
+
+/* Styling of the buttons*/
+.my_pages button {
+	font-family: "Comfortaa", cursive;
+	font-size: 13px;
+	padding: 10px 20px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	background-color: #ff8383;
+	transition: 0.5s;
+	color: white;
+	cursor: pointer;
+}
+
+/*positioning of the bg img and 
+setting the image to the background of
+the content using z-index*/
+.background {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+/*setting of a black color background
+on top of the image by using z-index*/
+.blackbox {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*positioning of the home button 
+before hover effect*/
+.homebutton {
+	margin-left: 46%;
+	margin-top: 3%;
+	font-family: "Comfortaa", cursive;
+	font-size: 13px;
+	padding: 10px 20px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	background-color: #657dcc;
+	transition: 0.5s;
+	color: white;
+	cursor: pointer;
+}
+
+/*home button after hover effect*/
+.homebutton:hover,
+.my_pages button:hover {
+	background-color: lightblue;
+	color: black;
+}
+
+.top p {
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}
+
+.top p span {
+	font-size: 18px;
+	color: rgb(100, 98, 98);
+	background-color: rgba(247, 240, 240, 0.541);
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}

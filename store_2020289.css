@@ -1,0 +1,345 @@
+/*setting the bg color
+and giving a font family*/
+body {
+	background-color: black;
+	color: aliceblue;
+	font-family: "Rajdhani", sans-serif;
+}
+
+/*--------start of banner------------*/
+
+.banner-main {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	color: white;
+	display: inline-block;
+	padding: 4rem;
+	border-radius: 50px;
+}
+
+.banner-title {
+	font-size: 6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-bottom: 1rem;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: bold;
+}
+
+.banner-title span {
+	color: rgb(0, 162, 255);
+	font-size: 7.5rem;
+}
+
+.quote {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
+	padding: 20px 0;
+	color: rgb(133, 132, 132);
+	font-size: 2rem;
+	font-family: "Rajdhani", sans-serif;
+}
+
+/*--------------end of banner--------------*/
+
+/* Slideshow container */
+.slideshow-container {
+	/* max-width: 1000px; */
+	width: 100%;
+	position: absolute;
+	top: 0;
+	/* margin: auto; */
+	z-index: -1;
+	filter: blur(4px);
+	opacity: 0.7;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/*applying box shadow and background color */
+.shop-product {
+	margin: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.5);
+	padding: 20px 40px;
+	border-radius: 10px;
+}
+
+/*product name styling*/
+.shop-product-title {
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+/*giving a size to the images*/
+.shop-product-image {
+	height: 250px;
+}
+
+/*aligning the product information*/
+.shop-product-info {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+
+/*applying the same styles to the product
+price and product number*/
+.shop-product-price,
+.product-no {
+	flex-grow: 1;
+	font-weight: bold;
+	font-family: "Playfair Display", serif;
+	color: gray;
+	text-transform: uppercase;
+}
+
+/*applying styling to the
+main container*/
+.shop-products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+
+.shop-product-desc {
+	color: black;
+}
+
+/*styling the button*/
+.button {
+	text-align: center;
+	vertical-align: middle;
+	padding: 0.67em 0.67em;
+	cursor: pointer;
+	outline: none;
+}
+
+/*styling the shop buttons*/
+.add-to-cart-button {
+	background-color: #00d200;
+	border: none;
+	border-radius: 10px;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+/*styling the shop buttons with hover effect*/
+.add-to-cart-button:hover {
+	transform: scale(1.1);
+	box-shadow: 1px 1px 20px #00d200;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+	display: none;
+	position: fixed;
+	bottom: 20%;
+	right: 32%;
+	z-index: 9;
+	color: black;
+	font-family: "Titillium Web", sans-serif;
+	border-radius: 50px;
+}
+
+.form-popup h1 {
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+/* Add styles to the form container */
+.form-container {
+	max-width: 500px;
+	padding: 20px 40px;
+	background-color: white;
+	border-radius: 50px;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+/*setting style and positioning to 
+the cart product purchase button*/
+.p-btn {
+	background-color: #00d200;
+	padding: 16px 10px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+
+/* Add a red background color to the form cancel button */
+.c-btn {
+	background-color: #ff0000;
+	padding: 16px 10px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+
+/* Add some hover effects to buttons */
+.p-btn:hover,
+.c-btn:hover,
+.open-button:hover {
+	opacity: 1;
+}
+
+/*positioning and styling to the form contents*/
+.form-details {
+	background-color: rgb(255, 255, 255);
+	font-size: 20px;
+	margin-left: 31%;
+	color: black;
+	padding: 3% 5%;
+	width: 500px;
+	border-radius: 50px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+/*giving size to the cart images*/
+.cart-image {
+	width: 300px;
+	height: 200px;
+}
+
+/*styling the remove button in form
+and positioning*/
+.Remove {
+	color: white;
+	background-color: #ff0000;
+	border: none;
+	border-radius: 50px;
+	font-weight: bold;
+	padding: 2px 40px 4px 40px;
+	font-size: 1.5rem;
+	margin-left: 50%;
+	cursor: pointer;
+}
+
+.Remove:hover {
+	background-color: rgb(255, 84, 84);
+}
+
+/*aligning the cart products*/
+.cart-product {
+	margin-left: 10%;
+	padding-top: 2%;
+	margin-right: 10%;
+	text-align: center;
+}
+
+/*positioning the cart product title*/
+.cart-title {
+	text-align: center;
+	font-size: 4rem;
+	margin-top: 20%;
+}
+
+/*giving a bg color and border radius
+to the cart */
+.cart-products {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50px;
+}
+
+/*giving a gap in top in the cart
+between the products*/
+hr {
+	margin-top: 2%;
+}
+
+/*styling cart products  title*/
+.cart-image-desc {
+	font-size: 1.5rem;
+	color: aqua;
+}
+
+/*editing the font of product price and product ID*/
+.cart-image-price,
+.cart-product-desc {
+	font-family: "Playfair Display", serif;
+	color: rgb(196, 193, 193);
+	font-size: 1rem;
+}
+
+/*main purchase purchase to proceed*/
+.btn-purchase {
+	background-color: #00d200;
+	padding: 16px 10%;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 5%;
+	margin-left: 74%;
+	border-radius: 20px;
+	margin-top: 2%;
+}
+
+/*quantity navigator*/
+.Quantity {
+	padding: 5px 20px;
+	border-radius: 50px;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-weight: bold;
+}
